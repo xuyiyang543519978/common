@@ -1,0 +1,11 @@
+
+
+dependencies {
+    compile "org.projectlombok:lombok:${lombok_version}"
+    compile "org.apache.commons:commons-lang3:${common_lang_versin}"
+    compile "com.fasterxml.jackson.core:jackson-databind:${fasterxml_core_version}"
+    compile "com.fasterxml.jackson.core:jackson-core:${fasterxml_core_version}"
+    compile "com.fasterxml.jackson.core:jackson-annotations:${fasterxml_core_version}"
+    compile "org.reflections:reflections:${reflections_version}"
+    compile "org.slf4j:slf4j-api:${slf4j_version}"
+}

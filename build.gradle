@@ -1,0 +1,33 @@
+
+
+subprojects{
+    group = 'com.dianrong.ams.common'
+    version = '1.0.0-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    apply plugin: 'maven-publish'
+    apply plugin: 'maven'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
+
+    repositories {
+        mavenCentral()
+        maven {
+            url 'http://archiva.dianrong.com/repository/mirror'
+        }
+        maven {
+            url 'http://archiva.dianrong.com/repository/internal'
+        }
+        maven {
+            url 'http://archiva.dianrong.com/repository/snapshots'
+        }
+        maven {
+            url 'https://jcenter.bintray.com/io/springfox/'
+        }
+    }
+}
